@@ -68,7 +68,7 @@ var loadPagesInfo = function(pages){
       $page.find('.likes').text(response.likes);
       FB.api(item.id+'/picture?type=large', function(response){
         // 塞資料到 html 中
-        $page.find('.thumbnail img').attr('src',response.data.url)
+        $page.find('.thumbnail img').attr('src',response.data.url);
         $page.appendTo(current);
         counter++;
         // 塞完資料以後處理一下斷行
